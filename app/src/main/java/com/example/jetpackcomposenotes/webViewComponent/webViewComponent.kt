@@ -17,9 +17,7 @@ fun WebViewComponent(
     modifier: Modifier = Modifier,
     onExit: () -> Unit = {} // called when no more back stack
 ) {
-
     var webView: WebView? by remember { mutableStateOf(null) }
-
     // 🔥 Handle device back press
     BackHandler {
         if (webView?.canGoBack() == true) {
@@ -28,7 +26,6 @@ fun WebViewComponent(
             onExit()
         }
     }
-
     AndroidView(
         modifier = modifier.fillMaxSize(),
         factory = { context ->
@@ -53,7 +50,6 @@ fun WebViewComponent(
         },
         update = {}
     )
-
     // 🔥 Cleanup (important)
     DisposableEffect(Unit) {
         onDispose {
