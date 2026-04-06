@@ -106,6 +106,7 @@ fun WebViewComponent(
 
     ---------- BACK HANDLING ----------
 
+
     canGoBack() → checks WebView history
 
     goBack() → navigates back inside WebView
