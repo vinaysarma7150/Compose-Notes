@@ -1,5 +1,6 @@
 package com.example.jetpackcomposenotes
 
+import WebViewComponent
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,10 +14,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
-import com.example.jetpackcomposenotes.components.textComponents.TextComponent
 import com.example.jetpackcomposenotes.ui.theme.JetpackComposeNotesTheme
-import com.example.jetpackcomposenotes.webViewComponent.WebViewComponent
+
 
 class MainActivity : ComponentActivity() {
 
